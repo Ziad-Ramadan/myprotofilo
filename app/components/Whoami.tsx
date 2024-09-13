@@ -20,7 +20,7 @@ export default function Whoami() {
         </span>
         <Cursor/>
         </h2>
-        <p className='text-2xl sm:text-2xl' >I'm Ziad Ramadan Software Engineer graduted from Arab Academy For Science and Technology</p>
+        <p className='text-2xl sm:text-2xl'>I&apos;m Ziad Ramadan Software Engineer graduated from Arab Academy For Science and Technology</p>
         <div className='flex flex-row mx-auto max-w-[1260px] pt-10'>
         <ol className="list-none">
         <h3>My Education</h3>
@@ -40,9 +40,9 @@ export default function Whoami() {
         <br /> Summer Internship
         </li>
         <li className="relative before:content-['→'] before:absolute before:left-0 before:text-blue-500 pl-6">
-            Front-End Development: Proficient in Nextjs, Tailwind CSS and JavaScript.
-            <br /> Back-End Development: Skilled in PHP, with experience using the Laravel framework for
-                    website development.
+            Front-End Development: Proficient in Nextjs Tailwind CSS and JavaScript
+            <br /> Back-End Development: Skilled in PHP with experience using the Laravel framework for
+                    website development
         </li>
          <li className="relative before:content-['→'] before:absolute before:left-0 before:text-blue-500 pl-6">
             Data Scientist in Python

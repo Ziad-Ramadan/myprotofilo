@@ -1,6 +1,6 @@
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { EffectCoverflow, Navigation, Pagination} from 'swiper/modules';
 import React from 'react'
 import 'swiper/css';
 import 'swiper/css/effect-coverflow'
