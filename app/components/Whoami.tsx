@@ -1,7 +1,5 @@
 "use client"
 import React from 'react'
-import  ReactTyped  from "react-typed";
-import Image from "next/image";
 import { useTypewriter,Cursor } from 'react-simple-typewriter';
 export default function Whoami() {
     const [text] =useTypewriter({

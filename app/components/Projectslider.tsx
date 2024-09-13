@@ -9,7 +9,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Image from 'next/image';
 import im1 from "../Images/build.png"
-import im2 from "../Images/votinglandpage.png"
 import im3 from "../Images/build.png"
 export default function Projectslider() {
   return (
