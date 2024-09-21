@@ -8,7 +8,10 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div>
-      <Navbar/>
+    <Navbar/>
+    
+    <div className="h-100vw bg-slate-200">
+      
       <section id="Home">
       <Whoami/>
       </section>
@@ -25,6 +28,7 @@ export default function Home() {
         <Contact/>
       </section>
       <Footer/>
+    </div>
     </div>
   );
 } 

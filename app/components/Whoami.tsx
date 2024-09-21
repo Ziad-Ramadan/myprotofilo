@@ -34,7 +34,6 @@ export default function Whoami() {
           <span className="font-bold text-green-500">
             {text}
           </span>
-          <Cursor />
         </h2>
         <p className='text-lg sm:text-2xl mt-4'>
           I&apos;m Ziad Ramadan, a Software Engineer graduated from the Arab Academy For Science and Technology.
