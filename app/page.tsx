@@ -7,7 +7,7 @@ import Information from './components/Information';
 import Footer from "./components/Footer";
 export default function Home() {
   return (
-    <div className="h-100vw bg-slate-200">
+    <div>
       <Navbar/>
       <section id="Home">
       <Whoami/>
