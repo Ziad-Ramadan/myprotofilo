@@ -22,9 +22,9 @@ export default function Footer() {
                 <p className="font-semibold text-white dark:text-white">Quick Link</p>
 
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                    <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Home</p>
-                    <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Who am I</p>
-                    <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Projects</p>
+                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500" href='/'>Home</a>
+                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500" href='#Home'>Who am I</a>
+                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500" href='#Project'>Projects</a>
                 </div>
             </div>
 
@@ -32,9 +32,9 @@ export default function Footer() {
                 <p className="font-semibold text-white dark:text-white">Industries</p>
 
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                    <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">ITI</p>
-                    <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Datacamp</p>
-                    <p className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Depi</p>
+                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"href="">ITI</a>
+                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"href=''>Datacamp</a>
+                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"href=''>Depi</a>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@ export default function Footer() {
                 <img src="https://www.svgrepo.com/show/28145/linkedin.svg" width="30" height="30" alt="in" />
             </div>
         </div>
-        <p className="font-sans p-8 text-white text-center  md:text-center md:text-lg md:p-4">If you wanna Hire me send now before you lose your chance!</p>
+        <p className="font-sans p-8 text-white text-center  md:text-center md:text-lg md:p-4">I am Looking For New Project With New Ideas So Lets Make The Future !</p>
     </div>
 </footer>
     </div>

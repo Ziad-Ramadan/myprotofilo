@@ -93,7 +93,7 @@ export default function Contact() {
           </form>
         </div>
 
-        <div className="md:w-1/3 ml-28 p-6  flex flex-col items-center justify-center text-center">
+        <div className="md:w-1/3 p-6  flex flex-col items-center justify-center text-center">
           <h2 className="text-2xl font-semibold mb-4">Connect with Me</h2>
           <div className="flex space-x-6">
             <a href="https://www.linkedin.com/in/ziad-ramadan-kamel/" target="_blank" rel="noopener noreferrer">

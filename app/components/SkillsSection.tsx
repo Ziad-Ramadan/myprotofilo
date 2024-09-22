@@ -21,12 +21,12 @@ export default function SkillsSection() {
         </div>
 
         <h2 className="text-3xl text-black font-bold text-center mt-12 mb-8">Why Hire Me</h2>
-        <ul className="list-disc list-inside text-black space-y-2">
-          <li>💡 **Problem Solver:** I thrive on finding efficient solutions to complex problems.</li>
-          <li>🎯 **Detail-Oriented:** I pay close attention to details, ensuring high-quality code and design.</li>
-          <li>🚀 **Adaptable:** I quickly learn new technologies and adapt to changing project requirements.</li>
-          <li>🤝 **Team Player:** I communicate effectively and work well within teams to achieve project goals.</li>
-          <li>📈 **Passionate Learner:** I am committed to continuous learning and staying updated with industry trends.</li>
+        <ul className="list-disc ml-5 list-inside text-black space-y-2">
+          <li>💡 Problem Solver: I thrive on finding efficient solutions to complex problems.</li>
+          <li>🎯 Detail-Oriented: I pay close attention to details, ensuring high-quality code and design.</li>
+          <li>🚀 Adaptable: I quickly learn new technologies and adapt to changing project requirements.</li>
+          <li>🤝 Team Player: I communicate effectively and work well within teams to achieve project goals.</li>
+          <li>📈 Passionate Learner: I am committed to continuous learning and staying updated with industry trends.</li>
         </ul>
       </div>
     </section>

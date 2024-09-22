@@ -17,8 +17,8 @@ export default function Home() {
       <section id = "About">
       <Information/>
       </section>
-      <section>
-        <SkillsSection/>
+      <section id="BOUT">
+      <SkillsSection/>
       </section>
       <section id="Project">
       <Projectslider/>
@@ -27,7 +27,7 @@ export default function Home() {
       <Services/>
       </section>
       <section id="Contact">
-        <Contact/>
+      <Contact/>
       </section>
       <Footer/>
     </div>
