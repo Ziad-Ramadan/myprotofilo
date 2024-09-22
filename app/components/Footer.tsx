@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <div>
-        <footer className="bg-gray-900 text-white font-sans dark:bg-gray-900">
+        <footer className="bg-gray-900 text-white font-sans">
     <div className="container px-6 py-12 mx-auto">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div className="sm:col-span-2">
@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
         </div>
         
-        <hr className="my-6 border-gray-200 md:my-8 dark:border-gray-700 h-2" />
+        <hr className="my-6 md:my-8 border-gray-700 h-2" />
         
         <div className="sm:flex sm:items-center sm:justify-between">
             <div className="flex flex-1 gap-4 hover:cursor-pointer">

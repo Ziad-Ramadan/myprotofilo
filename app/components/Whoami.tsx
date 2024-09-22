@@ -9,7 +9,6 @@ export default function Whoami() {
     delaySpeed: 2000,
   });
 
-  // State for managing the open/close state of education and experience sections
   return (
     <div className='flex flex-col md:flex-row mx-auto max-w-[1260px] pt-24 items-center justify-center'>
       <div className="flex-shrink-0 p-4">
@@ -20,7 +19,6 @@ export default function Whoami() {
         />
       </div>
 
-      {/* Right Column: Information */}
       <div className='flex flex-col mx-auto pt-4 md:pt-0 md:pl-8 text-center md:text-left'>
         <h1 className='text-4xl md:text-5xl font-bold tracking-tight z-20'>
           A Software{' '}
@@ -40,7 +38,6 @@ export default function Whoami() {
           I&apos;m Ziad Ramadan, a Software Engineer graduated from the Arab Academy For Science and Technology.
         </p>
 
-        {/* Education and Experience Sections */}
         </div>
       </div>
   );
