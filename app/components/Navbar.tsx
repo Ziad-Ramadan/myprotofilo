@@ -24,7 +24,7 @@ export default function Navbar() {
                             <div className='ml-4 flex items-center space-x-4'>
                                 <a href="/" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>Home</a>
                                 <a href="#Project" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>Projects</a>
-                                <a href="/" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>About me</a>
+                                <a href="#About" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>About me</a>
                                 <a href="#Services" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>Services</a>
                                 <a href="#Contact" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>Contact</a>
                                 <a href="https://drive.google.com/drive/folders/1QA8Wvf619j5UMLihzimKj1Cog3vCMsf7?usp=sharing" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>My certificates</a>
@@ -73,9 +73,9 @@ export default function Navbar() {
                 {isClick && (
                     <div className='md:hidden'>
                         <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-                            <a href="/" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Home</a>
-                            <a href="/" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Projects</a>
-                            <a href="/" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>About me</a>
+                            <a href="*/" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Home</a>
+                            <a href="#Project" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Projects</a>
+                            <a href="#About" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>About me</a>
                             <a href="#Services" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Services</a>
                             <a href="#Contact" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Contact</a>
                             <a href="https://drive.google.com/drive/folders/1QA8Wvf619j5UMLihzimKj1Cog3vCMsf7?usp=sharing" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>My certificates</a>

@@ -10,12 +10,11 @@ export default function Home() {
   return (
     <div>
     <Navbar/>
-    
     <div className="h-100vw bg-slate-200">
       <section id="Home">
       <Whoami/>
       </section>
-      <section>
+      <section id = "About">
       <Information/>
       </section>
       <section>
