@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar";
 import  Whoami from "./components/Whoami";
-import Projectslider from "./components/Projectslider";
 import Services from "./components/services";
 import Contact from "./components/Contact";
 import Information from './components/Information';
 import Footer from "./components/Footer";
 import SkillsSection from "./components/SkillsSection";
+import Slider from "./components/Slider";
 export default function Home() {
   return (
     <div>
@@ -21,8 +21,9 @@ export default function Home() {
       <SkillsSection/>
       </section>
       <section id="Project">
-      <Projectslider/>
-      </section>
+      {/* <Projectslider/> */}
+      <Slider  />
+=      </section>
       <section id="Services">
       <Services/>
       </section>

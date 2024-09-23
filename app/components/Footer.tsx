@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <div>
         <footer className="bg-gray-900 text-white font-sans">
-    <div className="container px-6 py-12 mx-auto">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-            <div className="sm:col-span-2">
-                <h1 className="max-w-lg text-xl font-semibold tracking-tight text-white xl:text-2xl dark:text-white">Send me email and lets start!</h1>
+            <div className="container px-6 py-12 mx-auto">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+                    <div className="sm:col-span-2">
+                        <h1 className="max-w-lg text-xl font-semibold tracking-tight text-white xl:text-2xl dark:text-white">Send me email and lets start!</h1>
 
                 <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
                     <input id="email" type="text" className="px-4 py-2 text-white bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-white focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email Address" />
@@ -32,7 +32,7 @@ export default function Footer() {
                 <p className="font-semibold text-white dark:text-white">Industries</p>
 
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"href="">ITI</a>
+                    <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"href=''>ITI</a>
                     <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"href=''>Datacamp</a>
                     <a className="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"href=''>Depi</a>
                 </div>
@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
         <p className="font-sans p-8 text-white text-center  md:text-center md:text-lg md:p-4">I am Looking For New Project With New Ideas So Lets Make The Future !</p>
     </div>
-</footer>
+        </footer>
     </div>
   )
 }
