@@ -1,24 +1,37 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 
 export default function Information() {
   const [openSection, setOpenSection] = useState<string | null>(null);
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
   const toggleSection = (section: string) => {
-    setOpenSection(openSection === section ? null : section);
+    if (openSection === section) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setOpenSection(null);
+        setIsAnimating(false);
+      }, 300); // Delay for the closing animation
+    } else {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setOpenSection(section);
+        setIsAnimating(false);
+      }, 300); // Delay for the opening animation
+    }
   };
 
   return (
-    <div className='flex flex-col items-center justify-center md:flex-row md:items-center md:justify-center gap-8 pt-10'>
-      <div className='text-center'>
-        <button
-          onClick={() => toggleSection('education')}
-          className='bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300'>
+    <div className='flex flex-col items-center justify-center md:flex-row md:items-start md:justify-center gap-8 pt-10'>
+      
+      {/* Education Container */}
+      <div className='border rounded-lg shadow-md overflow-hidden w-full md:w-1/3 cursor-pointer' onClick={() => toggleSection('education')}>
+        <div className='bg-gray-700 text-white py-2 px-4'>
           My Education
-        </button>
+        </div>
         {openSection === 'education' && (
-          <div className='mt-4 transition-opacity duration-500 ease-in-out'>
-            <ol className="list-none space-y-4">
+          <div className={`bg-white p-4 transition-all duration-300 ease-in-out ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
+            <ol className={`list-none space-y-4 transition-opacity duration-300 ease-in-out ${isAnimating ? 'fade-out' : 'fade-in'}`}>
               <li className="relative before:content-['→'] before:absolute before:left-0 before:text-blue-500 pl-6">
                 Bachelor of Computer Science
                 <br /> Arab Academy for Science and Technology
@@ -31,16 +44,15 @@ export default function Information() {
           </div>
         )}
       </div>
-      
-      <div className='text-center'>
-        <button
-          onClick={() => toggleSection('experience')}
-          className='bg-green-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-green-600 transition duration-300'>
+
+      {/* Experience Container */}
+      <div className='border rounded-lg shadow-md overflow-hidden w-full md:w-1/3 cursor-pointer' onClick={() => toggleSection('experience')}>
+        <div className='bg-gray-700 text-white py-2 px-4'>
           My Experience
-        </button>
+        </div>
         {openSection === 'experience' && (
-          <div className='mt-4 transition-opacity duration-500 ease-in-out'>
-            <ol className="list-none space-y-4">
+          <div className={`bg-white p-4 transition-all duration-300 ease-in-out ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
+            <ol className={`list-none space-y-4 transition-opacity duration-300 ease-in-out ${isAnimating ? 'fade-out' : 'fade-in'}`}>
               <li className="relative before:content-['→'] before:absolute before:left-0 before:text-blue-500 pl-6">
                 ITI Open Source Development
                 <br /> Summer Internship
