@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import  Whoami from "./components/Whoami";
-import Services from "./components/services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Aboutme from "./components/Aboutme";
@@ -27,7 +26,6 @@ export default function Home() {
         <Projects/>
       </section>
       <section id="Services">
-      {/* <Services/> */}
       </section>
       <section>
         <SkillsSection/>
