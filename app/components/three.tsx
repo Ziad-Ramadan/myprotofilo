@@ -36,7 +36,6 @@ export default function Projects() {
       description: "Using C# - Play vs another player or CPU.",
       image: img3,
       status: "Finished",
-      respond : "https://www.bayt.com/ar/egypt/jobs/it-jobs/?page=2&_gl=1*1s9jv6*_up*MQ..*_ga*MTUzNTk5NDEyNy4xNzM4ODU4MDg0*_ga_1NKPLGNKKD*MTczODg1ODA4My4xLjAuMTczODg1ODA4My4wLjAuMA.."
 
     },
     {
@@ -84,7 +83,7 @@ export default function Projects() {
               <h3 className="text-xl text-white font-semibold">{project.title}</h3>
               <p className="text-white mt-2">{project.description}</p>
               <a
-                href={project.respond}
+                // href={project.respond}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-4 inline-block px-4 py-2 text-sm font-medium rounded-lg transition ${
