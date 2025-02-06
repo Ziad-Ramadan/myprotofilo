@@ -1,61 +1,58 @@
-import React from 'react';
-import Image from 'next/image';
-import in1 from '../Images/1.png';
-import in2 from '../Images/2.png';
-import in3 from '../Images/3.png';
-import in5 from '../Images/5.png';
-import in6 from '../Images/99.png';
-import in7 from '../Images/7.png';
-import in8 from '../Images/8.png';
-
+import React from "react";
+import { FaCode } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
 export default function Services() {
   return (
-    <div className='flex flex-col items-center mx-auto max-w-[1260px] pt-14'>
-      <h1 className='text-5xl sm:text-4xl font-bold tracking-tight z-20 text-blue-300'>My Services</h1>
-      
-      <div className='flex flex-wrap justify-center gap-4 mt-8'>
-        <Image 
-          src={in1} 
-          alt='' 
-          className='w-32 h-32 object-contain' 
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" 
-        />
-        <Image 
-          src={in2} 
-          alt='' 
-          className='w-32 h-32 object-contain' 
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
-        <Image 
-          src={in3} 
-          alt='' 
-          className='w-32 h-32 object-contain' 
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
-        <Image 
-          src={in6} 
-          alt='' 
-          className='w-32 h-32 object-contain' 
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
-        <Image 
-          src={in5} 
-          alt='' 
-          className='w-32 h-32 object-contain' 
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
-        <Image 
-          src={in7} 
-          alt='' 
-          className='w-32 h-32 object-contain' 
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
-        <Image 
-          src={in8} 
-          alt='' 
-          className='w-32 h-32 object-contain' 
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
+    <div className="bg-black">
+      <div className=" items-center justify-center">
+        <h1 className=" text-white text-6xl text-center justify-center mb-2 font-semibold ml-8 inline-block">
+          My Services
+        </h1>
+        <br />
+        <br />
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className="bg-gray-800 hover:bg-[#ff004e] transition-all duration-500 rounded-2xl border border-gray-800 hover:border-[#ff004e] transform w-[350px] h-[350px] group">
+              <div className="flex mx-9 mt-9">
+                <FaCode className="text-white group-hover:text-white w-[90px] h-[90px] transition-colors duration-500" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-xl text-white font-bold mb-2 group-hover:text-white transition-colors duration-500">
+                Web Development
+                </h2>
+                <p className="text-white group-hover:text-white transition-colors duration-500">
+                Proficient in building responsive and dynamic web applications using React, Next.js, and Tailwind CSS.
+                </p>
+              </div>
+            </div>
+            <div className="bg-gray-800 hover:bg-[#ff004e] transition-all duration-500 rounded-2xl border border-gray-800 hover:border-[#ff004e] transform w-[350px] h-[350px] group">
+              <div className="flex mx-9 mt-9">
+                <FaCode className="text-white group-hover:text-white w-[90px] h-[90px] transition-colors duration-500" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-xl text-white font-bold mb-2 group-hover:text-white transition-colors duration-500">
+                Enviroment and vision control
+                                </h2>
+                <p className="text-white group-hover:text-white transition-colors duration-500">
+                Skilled in vision control and work and collabrate with team members
+                </p>
+              </div>
+            </div>
+            <div className="bg-gray-800 hover:bg-[#ff004e] transition-all duration-500 rounded-2xl border border-gray-800 hover:border-[#ff004e] transform w-[350px] h-[350px] group">
+              <div className="flex mx-9 mt-9">
+                <FaSearch className="text-white group-hover:text-white w-[90px] h-[90px] transition-colors duration-500" />
+              </div>
+              <div className="p-6">
+                <h2 className="text-xl text-white font-bold mb-2 group-hover:text-white transition-colors duration-500">
+                Backend : Databases
+                                </h2>
+                <p className="text-white group-hover:text-white transition-colors duration-500">
+                Experienced in integrating Firebase for real-time applications and working with databases like MongoDB.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

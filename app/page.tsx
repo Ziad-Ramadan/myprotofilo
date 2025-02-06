@@ -2,30 +2,35 @@ import Navbar from "./components/Navbar";
 import  Whoami from "./components/Whoami";
 import Services from "./components/services";
 import Contact from "./components/Contact";
-import Information from './components/Information';
 import Footer from "./components/Footer";
+import Aboutme from "./components/Aboutme";
 import SkillsSection from "./components/SkillsSection";
-import Slider from "./components/Slider";
+import Projects from "./components/three"
+import Timeline from "./components/Timeline";
 export default function Home() {
   return (
     <div>
     <Navbar/>
-    <div className="h-100vw bg-slate-200">
+    <div className="h-100vw ">
       <section id="Home">
       <Whoami/>
       </section>
+      <section>
+      <Timeline/>
+      </section>
       <section id = "About">
-      <Information/>
       </section>
       <section id="BOUT">
-      <SkillsSection/>
+      <Aboutme/>
       </section>
       <section id="Project">
-      {/* <Projectslider/> */}
-      <Slider  />
-=      </section>
+        <Projects/>
+      </section>
       <section id="Services">
-      <Services/>
+      {/* <Services/> */}
+      </section>
+      <section>
+        <SkillsSection/>
       </section>
       <section id="Contact">
       <Contact/>

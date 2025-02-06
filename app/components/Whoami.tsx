@@ -1,44 +1,40 @@
-"use client"
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import Image from 'next/image';
-import Ziad from "../Images/1707246690922.jpeg"
+"use client";
+// import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Image from "next/image";
+// import Ziad from "../Images/1707246690922.jpeg";
+import Imageone from "../Images/20063706.png";
+import Imagetwo from "../Images/20088502.png";
+import Imagethree from "../Images/10212045.png";
+
 export default function Whoami() {
-  const [text] = useTypewriter({
-    words: ['Front-end Development', 'Back-end Development'],
-    loop: true,
-    delaySpeed: 2000,
-  });
+  //   const [text] = useTypewriter({
+  //     words: ['Front-end Development'],
+  //     loop: true,
+  //     delaySpeed: 2000,
+  //   });
 
   return (
-    <div className='flex flex-col md:flex-row mx-auto max-w-[1260px] pt-24 items-center justify-center'>
-      <div className="flex-shrink-0 p-4">
-        <Image
-          src={Ziad} 
-          alt="Ziad Ramadan"
-          className="w-40 h-40 md:w-52 md:h-52 rounded-full border-4 border-gray-300 shadow-lg object-cover"
-        />
-      </div>
-
-      <div className='flex flex-col mx-auto pt-4 md:pt-0 md:pl-8 text-center md:text-left'>
-        <h1 className='text-4xl md:text-5xl font-bold tracking-tight z-20'>
-          A Software{' '}
-          <span className='bg-gradient-to-r from-blue-300 to-slate-400 text-transparent bg-clip-text'>
-            Engineer
-          </span>
-        </h1>
+    <div className="flex flex-col md:flex-row bg-black items-center justify-center h-[700px] space-y-4 md:space-y-0 md:space-x-4 p-4">
+      <div className="flex-1 md:flex-[0.4] text-white p-8 items-center justify-start rounded-lg shadow-lg">
+        <h1 className="text-3xl font-bold">Software Engineer</h1>
         <br />
-        <h2 className='text-2xl sm:text-3xl mt-4'>
-          Specializing in{' '}
-          <span className="font-bold text-green-500">
-            {text}
-          </span>
-          <Cursor />
-        </h2>
-        <p className='text-lg sm:text-2xl mt-4'>
-          I&apos;m Ziad Ramadan, a Software Engineer graduated from the Arab Academy For Science and Technology.
-        </p>
-
+        <h1 className="text-5xl font-bold">
+          Hi, I&apos;m <span className="text-red-600">Zeyad</span>{" "}
+        </h1>
+        <h1 className="text-5xl font-bold">From Egypt</h1>
+      </div>
+      <div className="flex-1 text-white p-8 h-[500px] rounded-lg shadow-lg text-center flex flex-col justify-between">
+        <div className="flex justify-between">
+          <Image src={Imagetwo} alt="HEY" className="" />
+          <Image src={Imagethree} alt="HEY" className="" />
+        </div>
+        <h1 className="text-center text-2xl font-semibold">
+          Specializing in Front-end Development
+        </h1>
+        <div className="flex justify-center">
+          <Image src={Imageone} className="w-auto h-auto mb-5" alt="HEY" />
         </div>
       </div>
+    </div>
   );
 }

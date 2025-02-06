@@ -63,6 +63,7 @@ const Slider = () => {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
+        
         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 ml-4 rounded bg-opacity-50 text-white p-5"
       >
         &larr;

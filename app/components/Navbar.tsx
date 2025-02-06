@@ -10,25 +10,23 @@ export default function Navbar() {
 
     return (
         <div>
-            <nav className='bg-gray-900'>
+            <nav className='bg-black'>
                 <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                     <div className='flex items-center justify-between h-16'>
                         <div className='flex items-center'>
                             <div className='flex-shrink-0'>
-                                <a href="" className='text-white'>
-                                    ZR
+                                <a href="/" className='text-white font-bold'> &lt;/
+                                    <span className='text-red-600'>Z</span>&gt;
                                 </a>
                             </div>
                         </div>
                         <div className='hidden md:block'>
-                            <div className='ml-4 flex items-center space-x-4'>
-                                <a href="/" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>Home</a>
-                                <a href="#Project" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>Projects</a>
-                                <a href="#About" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>About me</a>
-                                <a href="#Services" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>Services</a>
-                                <a href="#Contact" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>Contact</a>
-                                <a href="https://drive.google.com/drive/folders/1QA8Wvf619j5UMLihzimKj1Cog3vCMsf7?usp=sharing" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>My certificates</a>
-                                <a href="https://drive.google.com/file/d/1HoAfOPSMQvp5AEYE-Jje7WjDvk6tAdwh/view?usp=sharing" className='text-white hover:bg-white hover:text-black rounded-lg p-2'>Resume</a>
+                            <div className='ml-4 flex items-center justify-between space-x-4'>
+                                <a href="/" className='text-white p-2 underline-animation'>Home</a>
+                                <a href="#Project" className='text-white p-2 underline-animation'>Projects</a>
+                                <a href="#About" className='text-white p-2 underline-animation'>About me</a>
+                                <a href="#Contact" className='text-white p-2 underline-animation'>Contact</a>
+                                <a target='_blank' href="https://drive.google.com/file/d/1rcDEA28XVc7meRZv2tk48mWC9-y3x2_B/view?usp=sharing" className='text-white p-2 underline-animation'>Resume</a>
                             </div>
                         </div>
                         <div className='md:hidden flex items-center'>
@@ -73,13 +71,11 @@ export default function Navbar() {
                 {isClick && (
                     <div className='md:hidden'>
                         <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-                            <a href="*/" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Home</a>
-                            <a href="#Project" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Projects</a>
-                            <a href="#About" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>About me</a>
-                            <a href="#Services" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Services</a>
-                            <a href="#Contact" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Contact</a>
-                            <a href="https://drive.google.com/drive/folders/1QA8Wvf619j5UMLihzimKj1Cog3vCMsf7?usp=sharing" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>My certificates</a>
-                            <a href="https://drive.google.com/file/d/1HoAfOPSMQvp5AEYE-Jje7WjDvk6tAdwh/view?usp=sharing" className='text-white block hover:bg-white hover:text-black rounded-lg p-2'>Resume</a>
+                            <a href="/" className='text-white block p-2 underline-animation'>Home</a>
+                            <a href="#Project" className='text-white block p-2 underline-animation'>Projects</a>
+                            <a href="#About" className='text-white block p-2 underline-animation'>About me</a>
+                            <a href="#Contact" className='text-white block p-2 underline-animation'>Contact</a>
+                            <a target='_blank' href="https://drive.google.com/file/d/1rcDEA28XVc7meRZv2tk48mWC9-y3x2_B/view?usp=sharing" className='text-white block p-2 underline-animation'>Resume</a>
                         </div>
                     </div>
                 )}
